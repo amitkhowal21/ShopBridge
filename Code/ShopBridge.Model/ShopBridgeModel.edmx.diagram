@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7999c3525df6409793cab99257ac18f3" Name="Diagram1">
+        <EntityTypeShape EntityType="ShopBridgeModel.Product" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopBridgeModel.ProductBrand" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopBridgeModel.ProductBrandMapping" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopBridgeModel.ProductStockMovement" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShopBridgeModel.ProductTag" Width="1.5" PointX="3" PointY="11.5" IsExpanded="true" />
+        <AssociationConnector Association="ShopBridgeModel.FK_ProductBrandMapping_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopBridgeModel.FK_ProductStockMovement_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopBridgeModel.FK_ProductTags_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="ShopBridgeModel.FK_ProductBrandMapping_ProductBrand" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
